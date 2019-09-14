@@ -4,6 +4,7 @@ class View extends React.Component {
     constructor(props){
         super(props)
     }
+    
     render(){
         return (
                <div className='container'>
@@ -15,7 +16,7 @@ class View extends React.Component {
                         </div>
 
                         <div className = 'row-1'>
-                            <div class = 'box-1'>
+                            <div className = 'box-1'>
                                 <h3>Temperature (F)</h3>
                                 <p>65.62F</p>
                             </div>
