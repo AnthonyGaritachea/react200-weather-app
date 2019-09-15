@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from './components/Search'
+import Search from '../components/SearchField/Search'
 import View from './components/View'
 
 export default class App extends React.Component {
