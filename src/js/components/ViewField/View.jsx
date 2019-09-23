@@ -13,7 +13,7 @@ class View extends React.Component {
             humidity,
             temp_min,
             temp_max,
-            wind 
+            wind
           } = this.props;
 
         return (
@@ -21,7 +21,7 @@ class View extends React.Component {
                    <h1>City Information</h1>
 
                         <div className = 'main-city'>
-                            <h1>City: {name}</h1>
+                            <h1>City:{name}</h1>
                         </div>
 
                         <div className = 'row-1'>
@@ -66,7 +66,7 @@ function mapStateToProps(state) {
     humidity: state.search.humidity,
     temp_min: state.search.temp_min,
     temp_max: state.search.temp_max,
-    wind: state.search.wind
+    wind: state.search.wind,
   };
 }
 
