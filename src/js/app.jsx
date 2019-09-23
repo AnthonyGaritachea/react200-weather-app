@@ -1,6 +1,7 @@
 import React from 'react';
-import Search from '../components/SearchField/Search'
-import View from './components/View'
+
+import Search from './components/SearchField/Search.jsx';
+import View from './components/ViewField/View.jsx';
 
 export default class App extends React.Component {
   render() {

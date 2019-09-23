@@ -1,28 +1,41 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
         //  Import Actions 
-import getWeather from './searchActions'
+import { getWeather, userCitySearch } from './searchActions.js';
 
-class Search extends React.Component{
+class Search extends React.Component {
     constructor(props){
         super(props)
-
-        this.handleSearch = this.handleSearch.bind(this)
+        this.handleSearch = this.handleSearch.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
-    handleSearch(event){
-        const { value } = e.target
-        dispatch(getWeather(value))
+    handleChange(event){
+        const { dispatch } = this.props;
+        dispatch(userCitySearch(event.target.value));
     }
 
-    render(){
+    handleSearch(){
+        const { userInput, dispatch } = this.props;
+        dispatch(getWeather(userInput)); 
+    }
+
+    render() {
         return (
             <div>
-              <input className = 'search-bar' type = 'text' />
-              <button onClick = {this.handleSearch} value = {value}>Search</button>
+              <input className = 'search-bar' type = 'text' onChange = {this.handleChange}/>
+              <button onClick = {this.handleSearch} >Search</button>
             </div>
         )
     }
 }
 
-export default Search
+
+function mapStateToProps(state) {
+    return {
+      userInput: state.search.userInput 
+    };
+  }
+
+  export default connect(mapStateToProps)(Search);
