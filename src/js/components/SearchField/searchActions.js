@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-        // Actions 
+    //    Actions 
 export function getWeather(userInput){
     return {
         type: 'GET_WEATHER', 

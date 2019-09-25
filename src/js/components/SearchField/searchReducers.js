@@ -19,12 +19,12 @@ const initialState = {
             return { 
                 ...state,
                 name: payload.data.name,
-                temp: payload.data.main.temp,
+                temp: payload.data.main.temp + 'F',
                 pressure: payload.data.main.pressure,
-                humidity: payload.data.main.humidity,
-                temp_min: payload.data.main.temp_min,
-                temp_max: payload.data.main.temp_max,
-                wind: payload.data.wind.speed,
+                humidity: payload.data.main.humidity + '%',
+                temp_min: payload.data.main.temp_min + 'F',
+                temp_max: payload.data.main.temp_max + 'F',
+                wind: payload.data.wind.speed + 'mph',
                 searchHistory: [...state.searchHistory, {
                     city: payload.data.name, 
                     date: new Date().toLocaleString()

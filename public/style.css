@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-image: url(./images/blue_gradient\ 10-13-00-452.jpeg);
+    background-size: cover;
+}
+
+h3 {
+    margin-right: 40px;
+    margin-bottom: 70px;
+}
+
+.intro-title {
+    font-size: 52px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.city-button {
+    margin-top: 50px;
+    background-color: #e4aee8;
+    outline: none;
+    border: 1px solid #e682ed;
+    padding: 5px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.city-button:hover {
+    background-color: #54d7ff;
+    border: 1px solid #49c5eb;
+    
+}
+.search-bar {
+    font-size: 28px;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.search-button {
+    font-size: 25px;
+    margin: 0px 7px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.main-city {
+    text-align: center;
+}
+
+.left-box {
+    margin-top: 56px;
+    width: 40%;
+}
+
+.right-box {
+    position: absolute;
+    right: 90px;
+    top: 206px;
+}
+
+.right-box li {
+    list-style: none;
+}
+
+.row-1 {
+    display: flex;
+}
+
+.row-2 {
+    display: flex;
+} 
+
+.search-stamp {
+    margin-bottom: 25px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+
+

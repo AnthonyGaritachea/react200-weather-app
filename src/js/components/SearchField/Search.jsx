@@ -30,14 +30,14 @@ class Search extends React.Component {
     render() {
         return (
             <div>
-                <button onClick = {this.handleButtonSearch} value = 'San Diego'>San Diego</button>
-                <button onClick = {this.handleButtonSearch} value = 'New York'>New York</button>
-                <button onClick = {this.handleButtonSearch} value = 'Tokyo'>Tokyo</button>
+                <button className = 'city-button' onClick = {this.handleButtonSearch} value = 'San Diego'>San Diego</button>
+                <button className = 'city-button' onClick = {this.handleButtonSearch} value = 'New York'>New York</button>
+                <button className = 'city-button' onClick = {this.handleButtonSearch} value = 'Tokyo'>Tokyo</button>
 
                 <br/>
 
                <input className = 'search-bar' type = 'text' onChange = {this.handleChange}/>
-               <button onClick = {this.handleSearch} >Search</button>
+               <button className = 'search-button' onClick = {this.handleSearch} >Search</button>
             </div>
         )
     }

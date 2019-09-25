@@ -9,7 +9,7 @@ export default class App extends React.Component {
     return (
 
          <div className='container'>
-              <h1>SDCS Weather Application</h1>
+              <h1 className = 'intro-title'>Weather Application</h1>
          <Search/>
          <View/>
          <History/>

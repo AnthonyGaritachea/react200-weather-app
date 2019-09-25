@@ -17,43 +17,46 @@ class View extends React.Component {
           } = this.props;
 
         return (
-               <div className='container'>
-                   <h1>City Information</h1>
-
+            
+                  <div className = 'left-box'>
                         <div className = 'main-city'>
                             <h1>City:{name}</h1>
                         </div>
-
-                        <div className = 'row-1'>
-                                <div className = 'box-1'>
+                         <div className = 'row-1'>
+                             <div className = 'box-1'>
                                     <h3>Temperature (F)</h3>
-                                    <p>{temp}F</p>
-                                </div>
+                                    <p>{temp}</p>
+                        </div>
                                 <div className = 'box-2'>
                                     <h3>Pressure</h3>
                                     <p>{pressure}</p>
                                 </div>
                                 <div className = 'box-3'>
                                     <h3>Humidity</h3>
-                                    <p>{humidity}%</p>
+                                    <p>{humidity}</p>
                                 </div>
                         </div>
-
+                   
+               
+    
                         <div className = 'row-2'>
                                 <div className = 'box-1'>
                                     <h3>Lowest Temp(F)</h3>
-                                    <p>{temp_min}F</p>
+                                    <p>{temp_min}</p>
                                 </div>
                                 <div className = 'box-2'>
                                     <h3>Highest Temp</h3>
-                                    <p>{temp_max}F</p>
+                                    <p>{temp_max}</p>
                                 </div>
                                 <div className = 'box-3'>
                                     <h3>Wind Speed</h3>
-                                    <p>{wind}mph</p>
+                                    <p>{wind}</p>
                                 </div>
-                        </div>   
-               </div>
+                        </div> 
+                    </div>
+        
+                
+             
         )
     }
 }

@@ -9,12 +9,12 @@ class History extends React.Component {
     render(){
         const { searchHistory } = this.props;
         return (
-            <div>
-               <h3>Search History</h3>
+            <div className = 'right-box'>
+               <h1>Search History</h1>
                { searchHistory.map( (city, index) => {
             return (
                 <li key={index}>
-                  <p>{city.city}, {city.date}</p>
+                  <p className = 'search-stamp'>{city.city}, {city.date}</p>
                 </li>
               )}
             )}
